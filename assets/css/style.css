@@ -12,6 +12,22 @@ body {
   margin: 0px auto 0px auto;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 7px;
+}
+
+li > a {
+  color: #FFFFFF;
+}
+
 h1 {
   font-family: "Roboto";
   font-style: normal;
@@ -60,6 +76,25 @@ body {
   line-height: 19px;
 }
 
+.footer-title {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-left: 40px;
+}
+
+li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
 .fa-location-dot, .fa-mobile-screen-button, .fa-list-ul, .fa-store {
   margin-right: 20px;
 }
@@ -67,6 +102,49 @@ body {
 .fa-mobile-screen-button, .fa-list-ul, .fa-store {
   margin-left: 35px;
   color: #7E7E7E;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  padding-top: 5px;
+}
+
+.fa-heart {
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
+}
+
+.fa-utensils, .fa-handshake-angle {
+  margin-right: 10px;
+}
+
+.rectangle-new {
+  width: 25%;
+  height: 25px;
+  background-color: #99E2D0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding-top: 5px;
+  color: #008766;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .header {
@@ -122,7 +200,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .functioning > h2 {
   align-self: flex-start;
@@ -133,6 +211,7 @@ body {
 .functioning__menu {
   display: flex;
   align-items: center;
+  position: relative;
   width: 85%;
   height: 73px;
   background: #F7F7F7;
@@ -145,6 +224,73 @@ body {
 }
 .functioning__menu:hover > .fa-mobile-screen-button, .functioning__menu:hover .fa-list-ul, .functioning__menu:hover .fa-store {
   color: #9356DC;
+}
+.functioning__menu > .circle-placing {
+  position: absolute;
+  left: -12px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  padding-top: 45px;
+  padding-bottom: 65px;
+}
+.restaurants > h2 {
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+.restaurants__desc {
+  background-color: #FFFFFF;
+  height: 250px;
+  width: 90%;
+  border: 0px solid #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 25px;
+  position: relative;
+}
+.restaurants__desc img {
+  object-fit: cover;
+  height: 170px;
+  width: 100%;
+  border: 0px solid #FFFFFF;
+  border-radius: 15px 15px 0px 0px;
+}
+.restaurants__desc .rectangle-new {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.restaurants__desc--disposal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants h3, .restaurants p {
+  margin-left: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.restaurants h3 {
+  margin-bottom: 0px;
+}
+.restaurants p {
+  margin-top: 0px;
+}
+
+.footer {
+  background-color: #353535;
+  width: 100%;
+  height: 200px;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
