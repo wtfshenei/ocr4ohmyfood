@@ -38,6 +38,13 @@ body {
 	line-height: 21px;
 }
 
+.menu-title {
+	font-family: 'Shrikhand';
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 41px;
+}
+
 .highlight-txt {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -63,4 +70,38 @@ li {
 	font-size: 16px;
 	line-height: 19px;
 	color: #FFFFFF;
+}
+
+.meal-cat {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.meal-title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+.meal-desc {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 17px;
+}
+
+.meal-price {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 18px;
 }

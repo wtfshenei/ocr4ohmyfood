@@ -8,16 +8,17 @@
 }
 
 .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
     background-color: #9356DC;
     border-radius: 50%;
-    text-align: center;
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
-    padding-top: 5px;
 }
 
 .fa-heart {
@@ -49,4 +50,16 @@
     overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+
+.fa-arrow-left {
+    width: 17px;
+    height: 16px;
+}
+
+.border {
+    display: block;
+    border: 2px solid $colour-tertiary;
+    width: 40px;
+    margin-bottom: 15px;
 }

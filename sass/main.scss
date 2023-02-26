@@ -165,3 +165,104 @@
     height: 200px;
     padding-top: 30px;
 }
+
+
+// Pages Menu //
+
+.headerm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 65px;
+    
+    &__logo {
+        margin: 15px 0px 15px 0px;
+        width: 45%;
+        height: 45px;
+    }
+
+    &>a {
+        position: absolute;
+        left: 25px;
+    }
+}
+
+.menu {
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+    & img {
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+    }
+
+    .background-menu {
+        width: 100%;
+        border: 0px solid #F7F7F7;
+        border-radius: 30px 30px 0px 0px;
+        background-color: #F7F7F7;
+        position: inherit;
+        padding: 10px 15px 40px 15px;
+        margin-top: -55px;
+        box-sizing: border-box;
+
+        &__restau-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .background-meal {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 70px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 0px 10px 0px 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+
+        &:last-child {
+            margin-bottom: 40px;
+        }
+
+        & h3, p {
+            margin: 3px;
+            padding: 3px;
+            overflow: hidden;
+	        text-overflow: ellipsis;
+	        white-space: nowrap;        
+        }
+        
+        &__placing {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .button-placing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        margin: 0px;
+        padding: 0px;
+        margin-top: 60px;
+    }
+}
