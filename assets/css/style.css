@@ -213,6 +213,11 @@ li {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media screen and (min-width: 993px) {
+  .rectangle-new {
+    width: 35%;
+  }
+}
 
 .fa-arrow-left {
   width: 17px;
