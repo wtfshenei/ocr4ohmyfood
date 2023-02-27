@@ -50,6 +50,10 @@
     overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+
+    @media screen and (min-width: 993px) {
+        width: 35%;
+    }
 }
 
 .fa-arrow-left {
