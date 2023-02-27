@@ -518,7 +518,7 @@ li {
 }
 @media screen and (min-width: 993px) {
   .menu .background-menu__restau-title {
-    width: 30%;
+    width: 50%;
     justify-content: space-around;
   }
 }
