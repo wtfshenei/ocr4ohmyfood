@@ -516,6 +516,12 @@ li {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 993px) {
+  .menu .background-menu__restau-title {
+    width: 30%;
+    justify-content: space-around;
+  }
+}
 .menu .background-menu button {
   display: flex;
   align-items: center;
