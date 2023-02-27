@@ -14,6 +14,10 @@
         margin: 15px 0px 15px 0px;
         width: 45%;
         height: 45px;
+
+        @media screen and (min-width: 993px) {
+            width: 15%;
+        }
     }
 }
 
@@ -51,6 +55,10 @@
             border-radius: 25px;
             margin-bottom: 55px;
             margin-top: 30px;
+
+            @media screen and (min-width: 993px) {
+                width: 18%;
+            }
         }
     }
 }
@@ -62,11 +70,24 @@
     justify-content: space-around;
     margin-bottom: 60px;
 
+    @media screen and (min-width: 993px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
     &>h2 {
         align-self: flex-start;
         margin-top: 50px;
         margin-bottom: 25px;
         margin-left: 20px;
+
+        @media screen and (min-width: 993px) {
+            width: 100%;
+            margin-left: 10%;
+        }
     }
     
     &__menu {
@@ -79,6 +100,15 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         margin-bottom: 25px;
+
+        @media screen and (min-width: 993px) {
+            width: 25%;
+            margin-right: 35px;
+
+            &:nth-child(2) {
+                margin-left: 10%;
+            }
+        }
 
         &:hover {
             background-color: #F5EDFF;
@@ -104,10 +134,23 @@
     padding-top: 45px;
     padding-bottom: 65px;
 
+    @media screen and (min-width: 993px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: flex-start;
+    }
+
     &>h2 {
         align-self: flex-start;
         margin-left: 20px;
         margin-bottom: 25px;
+
+        @media screen and (min-width: 993px) {
+            width: 100%;
+            margin-left: 10%;
+        }
     }
 
     &__desc {
@@ -120,6 +163,16 @@
   	    transition: 0.3s;
         margin-bottom: 25px;
         position: relative;
+        box-sizing: border-box;
+
+        @media screen and (min-width: 993px) {
+            width: 18%;
+            margin-right: 35px;
+
+            &:nth-child(2) {
+                margin-left: 10%;
+            }
+        }
         
         & img {
             object-fit: cover;
@@ -164,6 +217,19 @@
     width: 100%;
     height: 200px;
     padding-top: 30px;
+
+    @media screen and (min-width: 993px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 80px;
+
+        &>ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
 }
 
 
@@ -181,6 +247,10 @@
         margin: 15px 0px 15px 0px;
         width: 45%;
         height: 45px;
+
+        @media screen and (min-width: 993px) {
+            width: 15%;
+        }
     }
 
     &>a {
@@ -198,6 +268,10 @@
         object-fit: cover;
         height: 275px;
         width: 100%;
+
+        @media screen and (min-width: 993px) {
+            height: 430px;
+        }
     }
 
     .background-menu {
@@ -209,6 +283,22 @@
         padding: 10px 15px 40px 15px;
         margin-top: -55px;
         box-sizing: border-box;
+
+        @media screen and (min-width: 993px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: -55px auto 0px auto;
+
+            .fa-heart {
+                margin-left: 25px;
+            }
+            
+            .starters, .food, .desserts {
+                width: 60%;
+            }
+        }
 
         &__restau-title {
             display: flex;
@@ -236,6 +326,10 @@
         margin-bottom: 15px;
         box-sizing: border-box;
 
+        @media screen and (min-width: 993px) {
+            width: 100%;
+        }
+
         &:last-child {
             margin-bottom: 40px;
         }
@@ -253,6 +347,10 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
+
+            @media screen and (min-width: 993px) {
+                width: 95%;
+            }
         }
     }
 
@@ -264,5 +362,9 @@
         margin: 0px;
         padding: 0px;
         margin-top: 60px;
+
+        @media screen and (min-width: 993px) {
+            width: 100%;
+        }
     }
 }

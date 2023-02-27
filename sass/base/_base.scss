@@ -10,6 +10,10 @@ body {
 .container {
 	max-width: 480px;
 	margin: 0px auto 0px auto;
+
+    @media screen and (min-width: 993px) {
+        max-width: 1440px;
+    }
 }
 
 a {
@@ -22,6 +26,14 @@ a {
 li {
     list-style-type: none;
     margin-bottom: 7px;
+
+    @media screen and (min-width: 993px) {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
 }
 
 li > a {
