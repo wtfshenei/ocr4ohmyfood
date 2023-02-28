@@ -114,6 +114,7 @@ body {
   .footer-title {
     display: flex;
     align-self: center;
+    padding-bottom: 5px;
   }
 }
 
