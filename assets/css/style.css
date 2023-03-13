@@ -184,10 +184,20 @@ li {
   line-height: 17px;
 }
 
-.fa-heart {
-  height: 25px;
-  width: 25px;
-  margin-right: 5%;
+.img-heart {
+  width: 21px;
+  height: 21px;
+  margin-right: 15px;
+}
+.img-heart path {
+  stroke: #101010;
+  stroke-width: 1;
+  transform-origin: bottom;
+  transition: all 0.5s ease;
+}
+.img-heart path:hover {
+  background-color: linear-gradient(200deg, #9356DC -5%, #FF79DA 110%);
+  opacity: 1;
 }
 
 .fa-utensils, .fa-handshake-angle {
@@ -229,6 +239,27 @@ li {
   border: 2px solid #99E2D0;
   width: 40px;
   margin-bottom: 15px;
+}
+
+.fa-circle-check {
+  color: #FFF;
+  width: 20px;
+  height: 20px;
+}
+
+.heart-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5%;
+  fill: url("#myGradient");
+  stroke: #101010;
+  stroke-width: 1;
+  fill-opacity: 0;
+  transform-origin: 50% bottom;
+  transition: fill-opacity 2s ease-in-out;
+}
+.heart-icon:hover {
+  fill-opacity: 1;
 }
 
 .header {
@@ -277,7 +308,7 @@ li {
   width: 60%;
   height: 50px;
   color: #fff;
-  background: linear-gradient(200.64deg, #9356DC -5%, #FF79DA 110%);
+  background: linear-gradient(200deg, #9356DC -5%, #FF79DA 110%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   margin-bottom: 55px;
@@ -402,7 +433,7 @@ li {
     margin-left: 10%;
   }
 }
-.restaurants__desc img {
+.restaurants__desc .img-restau {
   object-fit: cover;
   height: 170px;
   width: 100%;
@@ -481,13 +512,13 @@ li {
   margin-bottom: 0px;
   padding-bottom: 0px;
 }
-.menu img {
+.menu .img-restau-menu {
   object-fit: cover;
   height: 275px;
   width: 100%;
 }
 @media screen and (min-width: 993px) {
-  .menu img {
+  .menu .img-restau-menu {
     height: 430px;
   }
 }
@@ -536,6 +567,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
   width: 100%;
   height: 70px;
   background: #FFFFFF;
@@ -565,11 +597,38 @@ li {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  transition: all 2s ease;
 }
 @media screen and (min-width: 993px) {
   .menu .background-meal__placing {
     width: 95%;
   }
+}
+.menu .background-meal .menu-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 70px;
+  background-color: #99E2D0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 15px 15px 0px;
+  transition: all 2s ease;
+}
+.menu .background-meal .menu-check .fa-circle-check {
+  display: none;
+}
+.menu .background-meal:hover .background-meal__placing {
+  width: 80%;
+}
+.menu .background-meal:hover .menu-check {
+  width: 15%;
+}
+.menu .background-meal:hover .menu-check .fa-circle-check {
+  display: inline;
 }
 .menu .button-placing {
   display: flex;
