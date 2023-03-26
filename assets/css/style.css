@@ -184,22 +184,6 @@ li {
   line-height: 17px;
 }
 
-.img-heart {
-  width: 21px;
-  height: 21px;
-  margin-right: 15px;
-}
-.img-heart path {
-  stroke: #101010;
-  stroke-width: 1;
-  transform-origin: bottom;
-  transition: all 0.5s ease;
-}
-.img-heart path:hover {
-  background-color: linear-gradient(200deg, #9356DC -5%, #FF79DA 110%);
-  opacity: 1;
-}
-
 .fa-utensils, .fa-handshake-angle {
   margin-right: 10px;
 }
@@ -260,6 +244,11 @@ li {
 }
 .heart-icon:hover {
   fill-opacity: 1;
+}
+
+.button-heart {
+  background: none;
+  border: none;
 }
 
 .header {
