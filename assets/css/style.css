@@ -143,6 +143,8 @@ li {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
+  width: 90%;
+  transition-delay: 0.3s;
 }
 
 .meal-desc {
@@ -249,6 +251,9 @@ li {
 .button-heart {
   background: none;
   border: none;
+  height: 30px;
+  width: 30px;
+  margin-top: -5px;
 }
 
 .header {
